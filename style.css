@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.loading{
+    display: none;
+    position: absolute;
+    background: #333;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation: powerLoading 4s;
+
+
+}
+@keyframes powerLoading{
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+nav{
+    background: #333;
+    height: 45px;
+    color: white;
+    font-size: 25px;
+    font-family: monospace;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: 0 0 0 10px
+}
+
+.gameContainer{
+    width: 90vw;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 10px;
+}
+.Container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Roboto',sans-serif;
+
+}
+.Container .box{
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background: rgb(239, 223, 253);
+    width: 10.3vw;
+}
+.boxH{
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(239, 223, 253);
+
+}
+.gameInfo{
+    padding: 0 34px 0 34px;
+    margin: 0 34px 0 34px;
+    font-family: 'Roboto',sans-serif;
+    
+}
+.gameInfo p{
+    font-size: 3vw;
+    background: -webkit-linear-gradient(45deg,red, #333);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#info{
+    margin: 50px;
+
+}
+.info{
+    background: black;
+    color: white;
+    padding: 10px;
+}
+#reset{
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#reset:hover{
+    padding: 8px;
+    margin: 2px;
+}
+
+.winGif{
+    display: none;
+    
+}
+.bc{
+    border: 2px solid black;
+}
+.blr{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.btb{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+@media screen and (max-width: 700px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    #info{
+        margin: 0;
+    }
+    .gameInfo p{
+        font-size: 30px;
+    }
+    .gameInfo{
+        margin: 0;
+    }
+}
+.cutTop{
+    width: 30vw;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 15.3%;
+    top: 137px;
+    transform-origin: 0;
+    /* transform: rotateZ(90deg); */
+}
+.cutLeft{
+    width: 30vw;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 20.3%;
+  top: 67px;
+  transform-origin: 0;
+  transform: rotateZ(90deg);
+
+}
+.cutRight{
+    width: 30vw;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 40.3%;
+    top: 67px;
+    transform-origin: 0;
+    transform: rotateZ(90deg);
+    
+}
+.cutBottom{
+    width: 30vw;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 15.3%;
+  top: 449px;
+  transform-origin: 0;
+}
+.cutHCenter{
+    width: 30vw;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 15.3%;
+  top: 293px;
+  transform-origin: 0;
+}
+.cutVCenter{
+    width: 30vw;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 15.3%;
+  top: 293px;
+  transform: rotateZ(90deg);
+
+}
+.cutSin{
+    width: 30vw;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 15.3%;
+  top: 293px;
+  transform-origin: 0;
+  transform: rotateZ(134deg);
+}
+.cutCos{
+    width: 30vw;
+    height: 3px;
+    background: black;
+    position: absolute;
+    left: 15.3%;
+    top: 293px;
+    transform-origin: 0;
+    transform: rotateZ(45deg);
+
+}

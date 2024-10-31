@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading">
+        <iframe style="border: none;" src="https://lottie.host/embed/0b38ff16-aaac-4756-8325-a9c22dac2687/rgavnR0XH4.json"></iframe>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li>Tic-Tac-Toe</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="gameContainer">
+            
+            <div class="Container">
+                <div class="box"><span class="boxtext" id="1"></span></div>
+                <div class="box blr"><span class="boxtext" id="2"></span></div>
+                <div class="box"><span class="boxtext" id="3"></span></div>
+                <div class="box btb"><span class="boxtext" id="4"></span></div>
+                <div class="box bc"><span class="boxtext" id="5"><div id="lineCut" class=""></div></span></div>
+                <div class="box btb"><span class="boxtext" id="6"></span></div>
+                <div class="box"><span class="boxtext" id="7"></span></div>
+                <div class="box blr"><span class="boxtext" id="8"></span></div>
+                <div class="box"><span class="boxtext" id="9"></span></div>
+            </div>
+            <div class="gameInfo">
+                <p>Welcome to tic-tac-toe</p>
+                <div id="info">
+                    <span class="info">Turn for X</span>
+                    <button id="reset" onclick="refreshPage()">Reset</button>
+                </div>
+                <div class="imgBox">
+                    <img src="excited.gif" alt="">
+                    <iframe style="border: none;" class="winGif" src="https://lottie.host/embed/633493a4-caa5-4b2c-8f53-95d934a546c9/NQDmm1MH7l.json"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
